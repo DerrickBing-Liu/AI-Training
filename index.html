@@ -1811,6 +1811,15 @@
               <li>使用 <code>'\\n'</code> 替代 <code>std::endl</code>。</li>
             </ul>
           </div>
+          <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:9px 11px; margin-top:8px;">
+            <div style="font-size:12px; font-weight:800; color:#334155; margin-bottom:5px;">🛠️ 操作步骤</div>
+            <ol style="font-size:11.5px; line-height:1.48; margin:0; padding-left:16px; color:#475569;">
+              <li>选中 <code>printAnimalReport</code> 函数的完整实现。</li>
+              <li>按 <span class="key-badge">Cmd/Ctrl</span>+<span class="key-badge">i</span> 打开 Copilot 内联聊天。</li>
+              <li>输入提示词：<code>重构这段代码以优化性能。</code></li>
+              <li>检查 Copilot 的优化建议，对比报告内容和动物数量，确认输出一致后点击 <strong>Accept</strong>。</li>
+            </ol>
+          </div>
         `
       },
       {
@@ -1891,6 +1900,15 @@
               <li>职责更清晰：工厂负责创建对象，动物类负责自身行为，<code>main()</code> 负责调用。</li>
             </ul>
           </div>
+          <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:9px 11px; margin-top:8px;">
+            <div style="font-size:12px; font-weight:800; color:#334155; margin-bottom:5px;">🛠️ 操作步骤</div>
+            <ol style="font-size:11.3px; line-height:1.42; margin:0; padding-left:16px; color:#475569;">
+              <li>选中动物类定义及 <code>main()</code> 中创建和调用动物对象的代码。</li>
+              <li>按 <span class="key-badge">Cmd/Ctrl</span>+<span class="key-badge">i</span> 打开 Copilot 内联聊天。</li>
+              <li>输入提示词：<code>重构这段代码。</code></li>
+              <li>检查工厂与业务逻辑是否分离，验证各动物类型及未知类型的处理，确认行为一致后点击 <strong>Accept</strong>。</li>
+            </ol>
+          </div>
         `
       },
       {
@@ -1933,7 +1951,7 @@
             <ol style="font-size:11.3px; line-height:1.42; margin:0; padding-left:16px; color:#475569;">
               <li>选中 <code>processAnimal</code> 方法中的完整实现。</li>
               <li>按 <span class="key-badge">Cmd/Ctrl</span>+<span class="key-badge">i</span> 打开 Copilot 内联聊天。</li>
-              <li>输入提示词：<code>如何重构processAnimal方法，使其更实用且更易于维护？</code></li>
+              <li>输入提示词：<code>重构processAnimal方法，使其更实用且更易于维护</code></li>
               <li>检查 Copilot 拆分出的职责函数，确认行为一致后点击 <strong>Accept</strong>。</li>
             </ol>
           </div>
@@ -2002,6 +2020,15 @@
               <li>直接边计算边输出，不构造多余的中间容器。</li>
             </ol>
           </div>
+          <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:9px 11px; margin-top:8px;">
+            <div style="font-size:12px; font-weight:800; color:#334155; margin-bottom:5px;">🛠️ 操作步骤</div>
+            <ol style="font-size:11.5px; line-height:1.48; margin:0; padding-left:16px; color:#475569;">
+              <li>选中动物类、<code>getAnimalSound</code>、<code>buildAnimalDescriptions</code> 及 <code>main()</code> 的相关实现。</li>
+              <li>按 <span class="key-badge">Cmd/Ctrl</span>+<span class="key-badge">i</span> 打开 Copilot 内联聊天。</li>
+              <li>输入提示词：<code>重构这段代码以节约内存。</code></li>
+              <li>检查查表、缓存及引用传参的实现，确认重复动物的输出内容与顺序不变后点击 <strong>Accept</strong>。</li>
+            </ol>
+          </div>
         `
       },
       {
@@ -2036,6 +2063,15 @@
               <li>各类职责更加独立，成员可以保持私有，接口更加清晰。</li>
               <li>新增训练、服务等能力时，可以继续组合新的功能类，而不必创建更深继承层次。</li>
             </ul>
+          </div>
+          <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:9px 11px; margin-top:8px;">
+            <div style="font-size:12px; font-weight:800; color:#334155; margin-bottom:5px;">🛠️ 操作步骤</div>
+            <ol style="font-size:11.3px; line-height:1.42; margin:0; padding-left:16px; color:#475569;">
+              <li>选中从 <code>Animal</code> 到 <code>GuideDog</code> 的类定义及 <code>main()</code> 中的调用代码。</li>
+              <li>按 <span class="key-badge">Cmd/Ctrl</span>+<span class="key-badge">i</span> 打开 Copilot 内联聊天。</li>
+              <li>输入提示词：<code>重构这段代码。</code></li>
+              <li>检查成员对象的职责和调用接口，验证属性、叫声及训练信息的输出，确认行为一致后点击 <strong>Accept</strong>。</li>
+            </ol>
           </div>
         `
       },
@@ -2165,7 +2201,7 @@
             </div>
             <div style="padding:9px 11px; border:1px solid #bfdbfe; border-radius:10px; background:#eff6ff;">
               <div style="font-size:11px; font-weight:800; color:#075985; margin-bottom:5px;">在聊天框中输入：</div>
-              <code style="display:block; padding:7px 9px; color:#e2e8f0; background:#1e293b; border-radius:6px; font-family:Consolas, 'Fira Code', monospace; font-size:10.5px;">Review the code in the file.</code>
+              <code style="display:block; padding:7px 9px; color:#e2e8f0; background:#1e293b; border-radius:6px; font-family:Consolas, 'Fira Code', monospace; font-size:10.5px;">审查此文件的代码</code>
             </div>
             <div style="padding:8px 11px; border:1px solid #fecaca; border-radius:10px; background:#fffafa; font-size:9.6px; line-height:1.32; color:#334155;">
               <div style="font-size:11px; font-weight:800; color:#b91c1c; margin-bottom:5px;">审查结果</div>
