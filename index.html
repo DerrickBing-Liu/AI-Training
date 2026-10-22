@@ -1138,10 +1138,10 @@
         title: "AI 工具生态与开发环境",
         layout: "section-divider",
         sectionLabel: "PART 1",
-        subtitle: "先建立统一的工具认知：从 VS Code、AI 插件、智能感知、聊天会话到本地智能体与 Copilot CLI。",
+        subtitle: "先建立统一的工具认知：从 VS Code、AI 扩展应用、智能感知、聊天会话到本地智能体与 Copilot CLI。",
         accent: "#2563eb",
         points: [
-          "开发环境与插件配置",
+          "开发环境与扩展应用配置",
           "AI 工具范式与能力边界",
           "AI Chat、Agent 与 CLI 的协同使用"
         ],
@@ -1154,9 +1154,9 @@
         layout: "vscode-deep-dive",
         bullets: [
           "<strong style=\"font-size:15px;\">极致的性能与轻量化</strong><br>启动秒级响应，大文件编辑流畅，完美平衡了轻量体验与 IDE 级别功能。",
-          "<strong style=\"font-size:15px;\">庞大且繁荣的插件生态</strong><br>通过应用商店可一键安装万千插件，随心定制支持任何主流编程语言与开发工具。",
-          "<strong style=\"font-size:15px;\">先进的 AI 辅助开发支持</strong><br>无缝集成 GitHub Copilot 和 Gemini 等 AI 助手，提供行内补全与智能重构，成倍提升编码效率。",
           "<strong style=\"font-size:15px;\">内置强大的一体化工具链</strong><br>集成了开箱即用的 Git 版本控制、多 Shell 终端和通用断点调试，无需频繁切换软件。",
+          "<strong style=\"font-size:15px;\">庞大且繁荣的扩展应用生态</strong><br>通过应用商店可一键安装万千扩展应用，随心定制支持任何主流编程语言与开发工具。",
+          "<strong style=\"font-size:15px;\">先进的 AI 辅助开发支持</strong><br>无缝集成 GitHub Copilot 和 Gemini 等 AI 助手，提供行内补全与智能重构，成倍提升编码效率。",
         ],
         extensions: [
           { 
@@ -1169,7 +1169,7 @@
             name: "Claude Code for VS Code", 
             svg: `<img src="${CLAUDE_LOGO_SRC}" width="20" height="20" alt="Claude 图标" style="display:block; object-fit:contain;">`, 
             color: "#ffffff", 
-            desc: "Anthropic 官方插件" 
+            desc: "Anthropic 官方扩展应用" 
           },
           { 
             name: "Google Antigravity", 
@@ -1202,8 +1202,8 @@
       },
       {
         id: "install-copilot-plugin",
-        category: "插件配置",
-        title: "AI插件的安装与账号配置",
+        category: "扩展配置",
+        title: "AI扩展的安装与账号配置",
         layout: "install-copilot-plugin",
         branding: "Trane Technologies"
       },
@@ -2803,7 +2803,7 @@
               </div>
               <div class="visual-column" style="display:flex; flex-direction:column; gap:10px; height: 100%;">
                 <h3 style="font-size:17px; margin-bottom:6px; display:flex; align-items:center; gap:7px; color:var(--brand-accent);">
-                  <span class="material-icons">extension</span> 主流 AI 辅助研发插件生态
+                  <span class="material-icons">extension</span> 主流 AI 辅助研发扩展生态
                 </h3>
                 <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
                   ${slide.extensions.map(ext => `
@@ -2865,7 +2865,7 @@
                     运行与调试
                   </div>
                   <div class="feature-card-body">
-                    内置对 <strong>JS、TS、Python、Node.js</strong> 调试的直接支持。配合 VS Marketplace 上的海量调试插件，即可支持 C++、Python 等全语种运行时调试。
+                    内置对 <strong>JS、TS、Python、Node.js</strong> 调试的直接支持。配合 VS Marketplace 上的海量调试扩展，即可支持 C++、Python 等全语种运行时调试。
                   </div>
                 </div>
                 <div class="feature-card">
@@ -2928,7 +2928,7 @@
                   <span class="material-icons" style="color:var(--success); font-size:15px;">check_circle</span> 2. 配置 Python 解释器或 C++ 编译器
                 </div>
                 <div style="display:flex; align-items:center; gap:4px; background:#fff; padding:5px 10px; border-radius:6px; border:1px solid #e2e8f0;">
-                  <span class="material-icons" style="color:var(--success); font-size:15px;">check_circle</span> 3. 安装 GitHub Copilot 插件
+                  <span class="material-icons" style="color:var(--success); font-size:15px;">check_circle</span> 3. 安装 GitHub Copilot 扩展
                 </div>
               </div>
               <div style="width:100%; display:flex; justify-content:flex-end; align-items:center; opacity:0.8; margin-top:auto;">
@@ -2952,7 +2952,7 @@
                 <div style="background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:12px 14px; box-shadow:var(--shadow); flex:1; display:flex; flex-direction:column; justify-content:space-between;">
                   <div>
                     <h4 style="font-size:13px; font-weight:700; color:var(--ink); margin-bottom:8px; display:flex; align-items:center; gap:5px;">
-                      <span class="material-icons" style="color:var(--brand-accent); font-size:16px;">extension</span> 在VS Code 扩展市场中安装AI插件
+                      <span class="material-icons" style="color:var(--brand-accent); font-size:16px;">extension</span> 在VS Code 扩展市场中安装AI扩展应用
                     </h4>
                     <div style="display:flex; flex-direction:column; gap:6px;">
                       <div style="display:flex; align-items:flex-start; gap:8px; background:#f1f5f9; padding:6px 10px; border-radius:6px; font-size:11px;">
@@ -3029,7 +3029,7 @@
                   <h3 style="font-size:14px; color:var(--brand-accent); display:flex; align-items:center; gap:6px; margin:0;">
                     <span class="material-icons" style="font-size:18px;">lan</span> 智能开发三层架构栈
                   </h3>
-                  <span class="badge" style="background:#eff6ff; color:#1d4ed8; border-color:#bfdbfe;">UI / 插件 / 模型</span>
+                  <span class="badge" style="background:#eff6ff; color:#1d4ed8; border-color:#bfdbfe;">UI / 扩展应用 / 模型</span>
                 </div>
                 <div class="arch-stack">
                   <div class="arch-layer" style="color:#1d4ed8; border-color:#93c5fd; background:linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);">
@@ -3039,7 +3039,7 @@
                     </div>
                     <div class="arch-layer-desc"><strong>Visual Studio Code / VS / Antigravity IDE</strong><br>负责代码的编写、编译与调试。</div>
                   </div>
-                  <div class="arch-boundary">=== 边界 1：宿主 API vs 独立集成插件 ===</div>
+                  <div class="arch-boundary">=== 边界 1：宿主 API vs 独立集成扩展应用 ===</div>
                   <div class="arch-flow-arrow">↓</div>
                   <div class="arch-layer" style="color:#047857; border-color:#86efac; background:linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);">
                     <div class="arch-layer-head">
